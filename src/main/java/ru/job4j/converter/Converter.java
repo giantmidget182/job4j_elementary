@@ -11,14 +11,14 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        float in = 140;
-        float expected = 2;
-        float expected2 = 2.33f;
+        float in = 420;
+        float expected = 6;
+        float expected2 = 7;
         float out = Converter.rubleToEuro(in);
         float out2 = Converter.rubleToDollar(in);
         boolean passed = expected == out;
         boolean passed2 = expected2 == out2;
-        System.out.println("140 rubles are 2. Test result : " + passed);
-        System.out.println("140 rubles are 2.33 Test result : " + passed2);
+        System.out.println("420 rubles are 2. Test result : " + passed);
+        System.out.println("420 rubles are 7. Test result : " + passed2);
     }
 }
