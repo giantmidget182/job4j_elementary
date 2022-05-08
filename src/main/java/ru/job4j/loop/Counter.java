@@ -9,9 +9,20 @@ public class Counter {
         return sum;
     }
 
+    public static int sumByEven(int start, int finish) {
+        int sum = 0;
+        for (int index = start; index <= finish; index++) {
+            if (index % 2 == 0) {
+                sum = sum + index;
+            }
+        }
+        return sum;
+    }
+
+    @SuppressWarnings("checkstyle:NoWhitespaceBefore")
     public static void main(String[] args) {
         System.out.println(sum(0, 10));
-        System.out.println(sum(5, 11));
-        System.out.println(sum(11, 55));
+
+        System.out.println(sumByEven(0, 20));
     }
 }
