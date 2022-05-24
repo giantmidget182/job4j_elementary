@@ -19,7 +19,6 @@ public class Counter {
         return sum;
     }
 
-    @SuppressWarnings("checkstyle:NoWhitespaceBefore")
     public static void main(String[] args) {
         System.out.println(sum(0, 10));
 
